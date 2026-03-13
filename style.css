@@ -1,0 +1,128 @@
+:root {
+    --bg: #FFE501;
+    --font-color: #1A1A1A;
+    --emphasis: #FF69B4;
+    --contrast: #fff;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: "Outfit", sans-serif;
+    font-size: 2.25rem;
+}
+
+h1 {
+    color: var(--contrast);
+    text-shadow:
+        5px 5px 0 #000,
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    font-family: "Bungee", sans-serif;
+    font-size: 6.25rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.random {
+    background-color: var(--font-color);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    border-radius: 1rem;
+    padding: 4rem 0;
+}
+
+#btnRandom {
+    background-color: var(--contrast);
+    color: var(--font-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.8rem;
+    cursor: pointer;
+}
+
+#winner {
+    color: var(--emphasis);
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.user-input {
+    background-color: transparent;
+    min-height: 400px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 2rem;
+}
+
+label{
+    margin: 0 0.6rem;
+}
+
+input {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.8rem;
+    font-size: 1.12rem;
+    font-weight: 500;
+    margin: 1rem 0.3rem;
+}
+
+.input-line{
+    display: flex;
+    flex-direction: row;
+}
+
+#btnAdd {
+    background-color: var(--emphasis);
+    color: var(--contrast);
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+.playerBox {
+    background-color: #FFF176;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: var(--emphasis) #FFF176;
+    scrollbar-gutter: stable;
+}
+
+#playerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playerList li {
+    border-bottom: 2px dashed var(--bg);
+    padding: 0.5rem 0 0.5rem 1.8rem;
+    text-align: left;
+    font-size: 1.87rem;
+    font-weight: 600;
+}
