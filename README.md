@@ -3,7 +3,7 @@
 Firstie é uma aplicação web que sorteia quem vai jogar primeiro em uma partida, com base nos nomes dos jogadores adicionados.
 [Acesse o projeto](https://tamiresborota.github.io/firstie/)
 
-![preview](preview.png)
+![preview](/assets/preview.png)
 
 ## Como usar
 
